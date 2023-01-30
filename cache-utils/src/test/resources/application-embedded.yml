@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    password:
+    username: sa
+  data:
+    redis:
+      repositories:
+        enabled: false
+
+dijta:
+  cache:
+    type: embedded
+    embedded:
+      expire-after-write: 10 #default value
+      maximum-size: 10000 #default value

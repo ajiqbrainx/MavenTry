@@ -1,0 +1,5 @@
+
+dijta.security:
+  entrySecurityExpression: hasAuthority('TEST_APP_ALLOWED')
+  excludePaths: /opendata/**, /notloggedin/**
+

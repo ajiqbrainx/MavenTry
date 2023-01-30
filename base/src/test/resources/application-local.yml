@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+
+spring.dataSource.driverClassName: 'org.h2.Driver'
+spring.dataSource.url: 'jdbc:h2:mem:testdb'
+spring.dataSource.username: 'sa'
+spring.dataSource.password: ''
+
+dijta:
+  cache:
+    cache-type: local
+  security:
+    adminRoleSecurityExpression: hasAnyAuthority('DIJTA_ACCA_READ')
